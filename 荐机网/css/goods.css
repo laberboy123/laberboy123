@@ -1,0 +1,39 @@
+.pre-img{
+    position: relative;
+    margin-left: 50px;
+    width: 400px;
+    height: 400px;
+    cursor: move;
+    z-index: 99;
+}
+.pre-img img{
+    height: 100%;
+}
+.mask{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background-color: #FEDE4F;
+    opacity: 0.5;
+    border: 1px solid #ccc;
+}
+.big{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 410px;
+    width: 500px;
+    height: 500px;
+    background-color: #ccc;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    z-index: 99;
+}
+.big img{
+    position: absolute;
+    top: 0;
+    left: 0;
+}

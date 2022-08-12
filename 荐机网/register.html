@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人注册</title>
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script language="javascript" src="js/register.js"></script>
+</head>
+<body>
+    <div class="w">
+        <header>
+            <div class="logo">
+                <a href="index.html"><img src="image/logo.png" alt=""></a>
+            </div>
+        </header>
+        <div class="registerarea">
+            <h3>注册新用户
+                <div class="login">我有账号，去<a href="login.html">登录</a></div>
+            </h3>
+            <div class="reg_form">
+                <form action="">
+                    <ul>
+                        <li><label for="">用户名：</label>
+                            <input type="text" class="inp" onblur="checkname()">
+                            <span class="error">
+                                <a style="font-size: 10px;"></a></span>
+                        </li>
+                        <li><label for="">邮箱地址：</label>
+                            <input type="text" class="inp" onblur="isEmail(this.value)">
+                            <span class="error">
+                                </span>
+                        </li>
+                        <li><label for="">登陆密码：</label>
+                            <input id = "logpwd" type="password" class="inp">
+                            <span class="error">
+                                <a id = "tip1" class = "tip1">
+                                    6-16位字符，可有字母、数字及标点符号组成，区分大小写</a></span>
+                        </li>
+                        <li class="safe">安全程度<em class="ruo">弱</em>
+                                                <em class="zhong">中</em>
+                                                <em class="qiang">强</em> </li>
+                        <li><label for="">确认密码：</label>
+                            <input id = "checkpwd" type="password" class="inp">
+                            <span class="error">
+                                <a id = "tip2" class = "tip1">再次输入密码</a></span>
+                        </li>
+                        <li class="agree">
+                            <input type="checkbox" name="" id="">同意协议并注册 
+                            <a href="#"> 《知晓用户协议》</a>
+                        </li>
+                        <li>
+                            <input class="btn" type="submit" value="完成注册">
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>  
+    </div>
+    <script>
+        var logpwd = document.getElementById('logpwd');
+        var checkpwd = document.getElementById('checkpwd');
+        var tip1 = document.getElementById('tip1');
+        logpwd.onfocus = function(){
+            tip1.className = 'tip2';
+        }
+        checkpwd.onfocus = function(){
+            tip2.className = 'tip2';
+        }
+        logpwd.onblur = function(){
+            if(this.value.length < 6 || this.value.length > 16){
+                tip1.innerHTML = '您输入的长度不对，要求6~16位';
+            }else{
+                tip1.className = 'tip1 right';
+                tip1.innerHTML = '您输入的正确';
+            }
+        }
+        checkpwd.onblur = function(){
+            tip2.className = 'tip1';
+        }
+    </script>
+</body>
+</html>

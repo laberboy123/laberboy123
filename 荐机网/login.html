@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录界面</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+    <div class="w">
+        <header>
+            <div class="logo">
+                <a href="index.html"><img src="image/logo.png" alt=""></a>
+            </div>
+        </header>
+        <div class="registerarea">
+            <h3>登录
+                <div class="login">还没有账号，去<a href="register.html">注册</a></div>
+            </h3>
+            <div class="reg_form">
+                <form action="">
+                    <ul>
+                        <li><label for="">用户名：</label>
+                            <input type="text" class="inp" onblur="checkname()">
+                            <span class="error">
+                                </img><a style="font-size: 10px;"></a></span>
+                        </li>
+                        <li><label for="">登陆密码：</label>
+                            <input type="text" class="inp" onblur="checkpwd()">
+                            <span class="error">
+                                </span>
+                        </li>
+                        
+                        <li class="agree">
+                            <input type="checkbox" name="" id="">同意协议并注册 
+                            <a href="#"> 《知晓用户协议》</a>
+                        </li>
+                        <li>
+                            <input class="btn" type="submit" value="登录">
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>  
+    </div>
+</body>
+</html>

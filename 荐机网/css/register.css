@@ -1,0 +1,115 @@
+a {text-decoration: none}
+ul {list-style-type: none}
+body{
+    background-color: rgb(240, 240, 240);
+}
+.w{
+    width: 1200px;
+    margin: auto;
+}
+header{
+    height: 84px;
+    border-bottom: 2px solid #c81523;
+}
+.registerarea{
+    height: 522px;
+    border-bottom: 2px solid rgba(204, 204, 204, 0.651);
+    margin-top: 20px;
+}
+.registerarea h3{
+    height: 42px;
+    background-color: #ececec;
+    line-height: 42px;
+    padding: 0 10px;
+    font-size: 18px;
+    font-weight: 400;
+}
+.login{
+    float: right;
+    font-size: 13px;
+}
+.login a{
+    color: #c81523;
+}
+.reg_form{
+    font-size: 14px;
+    width: 700px;
+    margin: 50px auto 0;
+}
+.reg_form ul li {
+    margin-bottom: 20px;
+}
+.reg_form ul li label{
+    display: inline-block;
+    width: 88px;
+    text-align: right;
+}
+.reg_form ul li .inp{
+    width: 242px;
+    height: 30px;
+    border: 1px solid #ccc;
+}
+.error{
+    color: #c81523;
+}
+.error_icon{
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    margin-top: -6px;
+}
+.success{
+    color: green;
+}
+.success_icon{
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    margin-top: -6px;
+}
+.tip1{
+    font-size: 10px;
+    display:none;
+}
+.tip2{
+    font-size: 10px;
+    margin-left: 100px;
+    display: block;
+}
+.right{
+    color: green;
+}
+.safe{
+    padding-left: 160px;
+}
+.safe em{
+    padding: 0 12px;
+    color: rgb(247, 247, 247);
+}
+.ruo{
+    background-color: #b1b1b1;
+}
+.zhong{
+    background-color: #b1b1b1;
+}
+.qiang{
+    background-color: #b1b1b1;
+}
+.agree{
+    padding-left: 95px;
+}
+.agree input{
+    vertical-align: middle;
+
+}
+
+.btn{
+    width: 200px;
+    height: 34px;
+    background-color: #c81523;
+    font-size: 14px;
+    color: #fff;
+    margin-left: 130px;
+}
